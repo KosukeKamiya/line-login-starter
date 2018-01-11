@@ -135,6 +135,7 @@ public class WebController {
             logger.debug("pictureUrl : " + idToken.picture);
         }
         model.addAttribute("idToken", idToken);
+        model.addAttribute("token", token);
         return "user/success";
     }
 
